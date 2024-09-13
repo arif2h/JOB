@@ -8,6 +8,7 @@ import {
 import { isAuthenticated } from "../middlewares/auth.js";
 
 const router = express.Router();
+console.log("1");
 
 router.post("/post", isAuthenticated, postApplication);
 router.get("/employer/getall", isAuthenticated, employerGetAllApplications);
